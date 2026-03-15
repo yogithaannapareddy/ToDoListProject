@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Remove margins and padding from list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* List items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* Zebra stripes */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* Checked task */
+ul li.checked {
+  background: #888;
+  color: white;
+  text-decoration: line-through;
+}
+
+/* Checkmark */
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #f44336;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Input */
+input {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Add button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #ddd;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
